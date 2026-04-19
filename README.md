@@ -1,5 +1,12 @@
 # 🏥 Doctor Appointment Booking System (MERN Stack)
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-green)
+![Express](https://img.shields.io/badge/Express.js-Backend-lightgrey)
+![React](https://img.shields.io/badge/React-Frontend-blue)
+![Node](https://img.shields.io/badge/Node.js-Server-green)
+![Status](https://img.shields.io/badge/status-Active-success)
+
 A full-stack Doctor Appointment Booking Web Application built using MongoDB, Express.js, React.js, and Node.js.
 
 ## 🚀 Live Demo
