@@ -7,12 +7,12 @@ const AdminContextProvider = (props) => {
     localStorage.getItem('aToken') ? localStorage.getItem('aToken') : '',
   );
 
-  const backendurl = import.meta.env.VITE_BACKEND_URL;
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
   const value = {
     aToken,
     setAToken,
-    backendurl,
+    backendUrl,
   };
 
   return (
