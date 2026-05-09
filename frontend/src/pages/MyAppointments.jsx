@@ -7,6 +7,28 @@ const MyAppointments = () => {
   const { backendUrl, token } = useContext(AppContext);
 
   const [appointments, setAppointments] = useState([]);
+  const months = [
+    '',
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ];
+
+  const slotDateFormate = (slotDate) => {
+    const dateArray = slotDate.split('_');
+    return (
+      dateArray[0] + ' ' + months[Number(dateArray[1])] + ' ' + dateArray[2]
+    );
+  };
 
   const getUserAppointments = async () => {
     try {
@@ -61,7 +83,7 @@ const MyAppointments = () => {
                   {' '}
                   Date & Time:-
                 </span>
-                {item.slotDate} | {item.slotTime}
+                {slotDateFormate(item.slotDate)} | {item.slotTime}
               </p>
             </div>
             <div></div>
