@@ -105,6 +105,3 @@ npm start
 
 ## 🙌 Credits
 Tutorial by GreatStackDev
-
-## 📬 Contact
-Feel free to reach out for questions
