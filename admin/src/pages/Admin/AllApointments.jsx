@@ -1,8 +1,10 @@
 import React, { useContext, useEffect } from 'react';
 import { AdminContext } from '../../context/AdminContext';
+import { AppContext } from '../../context/AppContext';
 
 const AllApointments = () => {
   const { aToken, appointments, getAllAppointments } = useContext(AdminContext);
+  const { calculateAge } = useContext(AppContext);
 
   useEffect(() => {
     if (aToken) {
@@ -38,6 +40,10 @@ const AllApointments = () => {
               />
               <p>{item.userData.name}</p>
             </div>
+            <p className="max-sm:hidden">{calculateAge(item.userData.dob)}</p>
+            <p>
+              {item.slotDate} at {item.slotTime}
+            </p>
           </div>
         ))}
       </div>
